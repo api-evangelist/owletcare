@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://owletcare.com/.well-known/openid-configuration
+notes: >-
+  Derived from the live OIDC discovery document served at owletcare.com. The
+  authentication surface is Shopify's Customer Account API (issuer
+  https://shopify.com/authentication/10043036); Owlet does not publish a
+  first-party developer API of its own.
+summary:
+  types:
+  - oauth2
+  - openIdConnect
+  oauth2_flows:
+  - authorizationCode
+  pkce: S256
+schemes:
+- name: ShopifyCustomerAccountOIDC
+  type: openIdConnect
+  issuer: https://shopify.com/authentication/10043036
+  openIdConnectUrl: https://owletcare.com/.well-known/openid-configuration
+  authorization_endpoint: https://b2b.owletcare.com/authentication/oauth/authorize
+  token_endpoint: https://b2b.owletcare.com/authentication/oauth/token
+  end_session_endpoint: https://b2b.owletcare.com/authentication/logout
+  jwks_uri: https://b2b.owletcare.com/authentication/.well-known/jwks.json
+  response_types_supported:
+  - code
+  grant_types_supported:
+  - authorization_code
+  - refresh_token
+  - urn:ietf:params:oauth:grant-type:jwt-bearer
+  token_endpoint_auth_methods_supported:
+  - client_secret_basic
+  id_token_signing_alg_values_supported:
+  - RS256
+  code_challenge_methods_supported:
+  - S256
+  sources:
+  - well-known/owletcare-openid-configuration.json

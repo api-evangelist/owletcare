@@ -1,8 +1,31 @@
 aid: owletcare
 name: Owletcare
-description: Owletcare is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Owlet (Owletcare) is a baby-monitoring technology company that builds
+  connected-nursery hardware and companion apps for parents. Its flagship
+  Dream Sock is marketed as an FDA-cleared smart baby monitor that tracks a
+  sleeping infant's pulse rate, oxygen levels, movement and sleep patterns,
+  alongside the Dream Sight HD video monitor and the combined Dream Duo
+  system. Products pair a wearable/camera with the Owlet Dream mobile app for
+  real-time wellness insights and notifications. The consumer storefront at
+  owletcare.com runs on Shopify; sign-in is handled by Shopify's Customer
+  Account API (OIDC/OAuth), and Owlet does not currently publish a
+  first-party developer API program. This profile was surfaced as a Techstars
+  portfolio company and enriched from Owlet's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/owletcare/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://owletcare.com/cdn/shop/files/Owlet_Logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Baby Care
+- Health Monitoring
+- Consumer Electronics
+- Connected Devices
+- IoT
+- Sleep
+- Wearables
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,26 @@ maintainers:
 common:
 - type: Website
   url: https://owletcare.com/
+- type: Blog
+  url: https://owletcare.com/blogs/all
+- type: Support
+  url: https://support.owletcare.com/hc/en-us
+- type: PrivacyPolicy
+  url: https://owletcare.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://owletcare.com/policies/terms-of-service
+- type: SignUp
+  url: https://owletcare.com/customer_authentication/redirect
+- type: WellKnown
+  url: well-known/owletcare-well-known.yml
+- type: Authentication
+  url: authentication/owletcare-authentication.yml
+- type: OAuthScopes
+  url: scopes/owletcare-scopes.yml
+- type: DomainSecurity
+  url: security/owletcare-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1

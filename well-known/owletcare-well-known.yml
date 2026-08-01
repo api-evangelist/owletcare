@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of https://owletcare.com/.well-known/*
+host: https://owletcare.com
+notes: >-
+  owletcare.com is served by Shopify. The OIDC / OAuth authorization-server
+  discovery documents are Shopify's Customer Account authentication surface
+  (issuer https://shopify.com/authentication/10043036, endpoints at
+  b2b.owletcare.com), not a first-party Owlet developer API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: owletcare-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: owletcare-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
