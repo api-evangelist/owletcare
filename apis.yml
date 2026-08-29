@@ -13,6 +13,17 @@ description: >-
   first-party developer API program. This profile was surfaced as a Techstars
   portfolio company and enriched from Owlet's public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/owletcare/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
